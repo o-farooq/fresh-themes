@@ -5,6 +5,10 @@ html, body, main, section, header, ul, p, h1, h2, h3 {
   display: block;
 }
 
+p, li {
+  padding-right: 5px;
+}
+
 a {
   color: #0064BD;
   text-decoration: none;
