@@ -145,3 +145,9 @@ header > span.fa {
   color: #717171;
   font-size: 1.25em;
 }
+
+.social {
+  font-size: 1.3em;
+  text-transform: capitalize;
+  margin-right:10px;
+}
