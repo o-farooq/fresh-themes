@@ -1,0 +1,38 @@
+<wx:sub-section>
+
+  {{#> header-social }}
+  {{> header-simple _title="SOCIAL" _section="social" }}
+  {{/header-social}}
+
+  <wx:sub-section>
+
+      <w:pPr>
+          <w:pStyle w:val="Heading2"/>
+          <w:tabs>
+              <w:tab w:val="right" w:pos="9360"/>
+          </w:tabs>
+      </w:pPr>
+      <w:p >
+          <w:r>
+
+              <w:t>
+                  {{#each r.social }}
+                      {{#if url}}<w:hlink w:dest="{{{ url }}}">{{/if}}
+                          {{#if url}}
+                              <w:rPr>
+                                  <w:rStyle w:val="Hyperlink"/>
+                                  <w:sz-cs w:val="2"/>
+                                  <w:caps/>
+                              </w:rPr>
+                          {{/if}}
+                          <w:t>{{ label }} ({{ user }})</w:t>
+                      {{#if url}}</w:hlink>{{/if}}
+                    {{#unless @last}}
+                    {{/unless}}
+                  {{/each}}
+              </w:t>
+          </w:r>
+      </w:p>
+
+  </wx:sub-section>
+</wx:sub-section>

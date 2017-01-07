@@ -89,6 +89,11 @@
       {{/has}}
       {{#section "skills"}}{{> skills }}{{/section}}
 
+      {{#*inline "header-social"}}
+      {{> header-icon _title="PROFILES" _section="social" _icon="pict/star" }}
+      {{/inline}}
+      {{#section "social"}}{{> section/social }}{{/section}}
+
       {{#*inline "header-employment"}}
       {{> header-icon _title="EMPLOYMENT" _section="employment" _icon="pict/emp" }}
       {{/inline}}
@@ -148,6 +153,8 @@
       {{> header-icon _title="INTERESTS" _section="interests" _icon="pict/bicycle" }}
       {{/inline}}
       {{#section "interests"}}{{> section/interests }}{{/section}}
+
+
 
       <w:sectPr wsp:rsidR="00B43FDC" wsp:rsidRPr="000A3AF0" wsp:rsidSect="001B7422">
         <w:pgSz w:w="12240" w:h="15840"/>

@@ -1,0 +1,13 @@
+{{#section "social"}}
+<hr>
+<section id="social">
+  {{#> header-skills }}
+    {{> header-icon _title="SOCIAL" _section="profiles" _hdricon=(lookup . '_icon') }}
+  {{/header-skills}}
+
+    <div>
+        {{#each r.social}}<span class="social"> <a href="{{{ url }}}">{{ label }} ({{ user }})</a> </span> {{/each}}
+    </div>
+
+</section>
+{{/section}}
